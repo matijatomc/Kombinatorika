@@ -28,92 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtN = new System.Windows.Forms.TextBox();
             this.txtK = new System.Windows.Forms.TextBox();
             this.txtRjesenje = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnIzracunaj = new System.Windows.Forms.Button();
             this.btnNazad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "(slika formule)";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(16, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "n:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "k:";
-            // 
             // txtN
             // 
-            this.txtN.Location = new System.Drawing.Point(51, 49);
+            this.txtN.Location = new System.Drawing.Point(56, 91);
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(100, 20);
             this.txtN.TabIndex = 3;
             // 
             // txtK
             // 
-            this.txtK.Location = new System.Drawing.Point(51, 73);
+            this.txtK.Location = new System.Drawing.Point(56, 133);
             this.txtK.Name = "txtK";
             this.txtK.Size = new System.Drawing.Size(100, 20);
             this.txtK.TabIndex = 4;
             // 
             // txtRjesenje
             // 
-            this.txtRjesenje.Location = new System.Drawing.Point(51, 197);
+            this.txtRjesenje.Location = new System.Drawing.Point(12, 250);
             this.txtRjesenje.Name = "txtRjesenje";
             this.txtRjesenje.ReadOnly = true;
             this.txtRjesenje.Size = new System.Drawing.Size(100, 20);
             this.txtRjesenje.TabIndex = 5;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(51, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Rjesenje:";
-            // 
             // btnIzracunaj
             // 
-            this.btnIzracunaj.Location = new System.Drawing.Point(292, 61);
+            this.btnIzracunaj.FlatAppearance.BorderSize = 0;
+            this.btnIzracunaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIzracunaj.Image = global::Kombinatorika.Properties.Resources.Izracunaj;
+            this.btnIzracunaj.Location = new System.Drawing.Point(12, 159);
             this.btnIzracunaj.Name = "btnIzracunaj";
-            this.btnIzracunaj.Size = new System.Drawing.Size(75, 23);
+            this.btnIzracunaj.Size = new System.Drawing.Size(114, 17);
             this.btnIzracunaj.TabIndex = 7;
-            this.btnIzracunaj.Text = "Izračunaj";
             this.btnIzracunaj.UseVisualStyleBackColor = true;
             this.btnIzracunaj.Click += new System.EventHandler(this.btnIzracunaj_Click);
             // 
             // btnNazad
             // 
-            this.btnNazad.Location = new System.Drawing.Point(363, 247);
+            this.btnNazad.FlatAppearance.BorderSize = 0;
+            this.btnNazad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNazad.Image = global::Kombinatorika.Properties.Resources.Nazad;
+            this.btnNazad.Location = new System.Drawing.Point(709, 415);
             this.btnNazad.Name = "btnNazad";
-            this.btnNazad.Size = new System.Drawing.Size(75, 23);
+            this.btnNazad.Size = new System.Drawing.Size(79, 23);
             this.btnNazad.TabIndex = 8;
-            this.btnNazad.Text = "Nazad";
             this.btnNazad.UseVisualStyleBackColor = true;
             this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
             // 
@@ -121,32 +85,26 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Kombinatorika.Properties.Resources.varijacije_s_ponavljanjem;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.btnIzracunaj);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtRjesenje);
             this.Controls.Add(this.txtK);
             this.Controls.Add(this.txtN);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "FormaVarijacijeSPonavljanjem";
-            this.Text = "Varijacije s ponavljanjem";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Kombinatorika";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtN;
         private System.Windows.Forms.TextBox txtK;
         private System.Windows.Forms.TextBox txtRjesenje;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnIzracunaj;
         private System.Windows.Forms.Button btnNazad;
     }

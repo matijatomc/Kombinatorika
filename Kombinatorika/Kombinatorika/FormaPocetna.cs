@@ -65,5 +65,6 @@ namespace Kombinatorika
             DialogResult rez = frm.ShowDialog();
             this.Close();
         }
+
     }
 }

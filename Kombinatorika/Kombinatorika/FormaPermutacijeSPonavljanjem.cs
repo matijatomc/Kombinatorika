@@ -25,24 +25,27 @@ namespace Kombinatorika
             Formule a = new Formule();
             r = Convert.ToInt32(txtR.Text);
             txtR.ReadOnly = true;
+
             
-            if(brc >= r)
+            k[brc] = a.Permutacije(Convert.ToInt32(txtK.Text));
+            brc++;
+            txtK.Clear();
+
+            if (brc >= r)
             {
-                MessageBox.Show("Unjeli ste vec sve brojeve","Unos k",MessageBoxButtons.OK);
+                MessageBox.Show("Unjeli ste sve brojeve", "Unos k", MessageBoxButtons.OK);
                 txtN.Visible = true;
                 txtRjesenje.Visible = true;
                 btnIzracunaj.Visible = true;
-                label3.Visible = true;
-                label4.Visible = true;
                 btnUnesiK.Visible = false;
+                pictureBox1.Visible = false;
             }
             else
             {
-                k[brc] = a.Permutacije(Convert.ToInt32(txtK.Text));
                 MessageBox.Show("Sljedeći", "Unos k", MessageBoxButtons.OK);
-                brc++;
                 txtK.Clear();
             }
+            
             
         }
 
