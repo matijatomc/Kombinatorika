@@ -21,7 +21,17 @@ namespace Kombinatorika
         private void btnIzračunaj_Click(object sender, EventArgs e)
         {
             Formule a = new Formule();
-            int n = Convert.ToInt32( txtN.Text);
+            float n;
+            
+            bool provjeraN = float.TryParse(txtN.Text, out n);
+            
+            if (string.IsNullOrEmpty(txtN.Text) ||  !provjeraN )
+            {
+                MessageBox.Show("Krivo ste upisali podatke", "Greška");
+                return;
+            }
+
+
             n = a.Permutacije(n);
             txtRjesenje.Text =Convert.ToString(n);
         }

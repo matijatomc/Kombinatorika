@@ -18,16 +18,24 @@ namespace Kombinatorika
         }
         public int brc = 0;
         public int r;
-        public int[] k= new int[100];
+        public float[] k= new float[100];
 
         private void btnUnesiR_Click(object sender, EventArgs e)
         {
             Formule a = new Formule();
-            r = Convert.ToInt32(txtR.Text);
+
+            bool provjeraR = int.TryParse(txtR.Text, out r);
+            bool provjeraK = float.TryParse(txtK.Text, out k[brc]);
+
+            if (string.IsNullOrEmpty(txtR.Text) || string.IsNullOrEmpty(txtK.Text) || !provjeraR  || !provjeraK )
+            {
+                MessageBox.Show("Krivo ste upisali podatke", "Greška");
+                return;
+            }
             txtR.ReadOnly = true;
 
             
-            k[brc] = a.Permutacije(Convert.ToInt32(txtK.Text));
+            k[brc] = a.Permutacije(Convert.ToInt32(k[brc]));
             brc++;
             txtK.Clear();
 
@@ -60,9 +68,18 @@ namespace Kombinatorika
         private void btnIzracunaj_Click(object sender, EventArgs e)
         {
             Formule a = new Formule();
-            int n = a.Permutacije(Convert.ToInt32(txtN.Text));
-            int kRjesenje=1;
 
+            float n;
+            float kRjesenje=1;
+
+            bool provjeraN = float.TryParse(txtN.Text, out n);
+
+            if (string.IsNullOrEmpty(txtN.Text) || !provjeraN)
+            {
+                MessageBox.Show("Krivo ste upisali podatke", "Greška");
+                return;
+            }
+            
             for(int i = 0; i < r; i++)
             {
                 kRjesenje = kRjesenje * k[i];

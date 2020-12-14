@@ -9,9 +9,9 @@ namespace Kombinatorika
 {
     class Formule
     {
-        public int Permutacije(int n)
+        public float Permutacije(float n)
         {
-            int nRjesenje=1;
+            float nRjesenje=1;
             for (int i = 1; i <= n; i++)
             {
                 nRjesenje = nRjesenje * i;

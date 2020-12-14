@@ -20,10 +20,18 @@ namespace Kombinatorika
         private void btnIzracunaj_Click(object sender, EventArgs e)
         {
             Formule a = new Formule();
-            int n = Convert.ToInt32(txtN.Text);
-            int k = Convert.ToInt32(txtK.Text);
-            int rjesenje;
+            float n;
+            float k;
+            float rjesenje;
 
+            bool provjeraN = float.TryParse(txtN.Text, out n);
+            bool provjeraK = float.TryParse(txtK.Text, out k);
+
+            if (string.IsNullOrEmpty(txtN.Text) || string.IsNullOrEmpty(txtK.Text) || !provjeraN || !provjeraK)
+            {
+                MessageBox.Show("Krivo ste upisali podatke", "Greška");
+            }
+            
             n = n + k - 1;
 
             rjesenje = a.Permutacije(n - k);

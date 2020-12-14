@@ -19,8 +19,17 @@ namespace Kombinatorika
 
         private void btnIzracunaj_Click(object sender, EventArgs e)
         {
-            double n = Convert.ToInt32(txtN.Text);
-            double k = Convert.ToInt32(txtK.Text);
+            double n;
+            double k;
+
+            bool provjeraN = double.TryParse(txtN.Text, out n);
+            bool provjeraK = double.TryParse(txtK.Text, out k);
+
+            if (string.IsNullOrEmpty(txtN.Text)|| string.IsNullOrEmpty(txtK.Text) || !provjeraN || !provjeraK)
+            {
+                MessageBox.Show("Krivo ste upisali podatke", "Greška");
+                return;
+            }
 
             txtRjesenje.Text =Convert.ToString(Math.Pow(n, k));
         }
