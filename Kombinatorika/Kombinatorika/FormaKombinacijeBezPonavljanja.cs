@@ -28,7 +28,7 @@ namespace Kombinatorika
 
             if (string.IsNullOrEmpty(txtN.Text) || string.IsNullOrEmpty(txtK.Text) || !provjeraN || !provjeraK)
             {
-                MessageBox.Show("Krivo ste upisali podatke", "Greška");
+                MessageBox.Show("Pogrešno ste upisali podatke", "Greška");
                 return;
             }
 
