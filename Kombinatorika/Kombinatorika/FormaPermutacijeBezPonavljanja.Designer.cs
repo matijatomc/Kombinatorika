@@ -83,10 +83,11 @@
             this.Controls.Add(this.btnIzračunaj);
             this.Controls.Add(this.txtRjesenje);
             this.Controls.Add(this.txtN);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormaPermutacijeBezPonavljanja";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kombinatorika";
+            this.Text = "HyperMath";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -131,10 +131,11 @@
             this.Controls.Add(this.txtN);
             this.Controls.Add(this.btnUnesiK);
             this.Controls.Add(this.txtR);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormaPermutacijeSPonavljanjem";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kombinatorika";
+            this.Text = "HyperMath";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

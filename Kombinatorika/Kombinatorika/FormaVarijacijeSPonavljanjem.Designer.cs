@@ -92,10 +92,11 @@
             this.Controls.Add(this.txtRjesenje);
             this.Controls.Add(this.txtK);
             this.Controls.Add(this.txtN);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormaVarijacijeSPonavljanjem";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kombinatorika";
+            this.Text = "HyperMath";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaPocetna));
             this.btnPermutacijaS = new System.Windows.Forms.Button();
             this.btnPermutacijeBez = new System.Windows.Forms.Button();
             this.btnVarijacijeS = new System.Windows.Forms.Button();
@@ -135,11 +136,12 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormaPocetna";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kombinatorika";
+            this.Text = "HyperMath";
             this.TransparencyKey = System.Drawing.Color.Black;
             this.ResumeLayout(false);
 
