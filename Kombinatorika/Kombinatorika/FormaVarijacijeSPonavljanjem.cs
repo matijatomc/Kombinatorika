@@ -19,9 +19,11 @@ namespace Kombinatorika
 
         private void btnIzracunaj_Click(object sender, EventArgs e)
         {
+            //deklaracija varijabli
             double n;
             double k;
 
+            //***************provjere dali su upisane vrijednosti brojevi i dali su vrjednost null***************
             bool provjeraN = double.TryParse(txtN.Text, out n);
             bool provjeraK = double.TryParse(txtK.Text, out k);
 
@@ -30,10 +32,13 @@ namespace Kombinatorika
                 MessageBox.Show("Krivo ste upisali podatke", "Greška");
                 return;
             }
+            //****************************************************************************************************
 
+            //izračin formule i ispis rješenja
             txtRjesenje.Text =Convert.ToString(Math.Pow(n, k));
         }
 
+        //povratak na početnu formu
         private void btnNazad_Click(object sender, EventArgs e)
         {
             FormaPocetna frm = new FormaPocetna();

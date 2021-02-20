@@ -18,6 +18,7 @@ namespace Kombinatorika
             InitializeComponent();
         }
 
+        //Pokretanje forme permutacije s ponavljanjem
         private void btnPermutacijaS_Click(object sender, EventArgs e)
         {
             FormaPermutacijeSPonavljanjem frm = new FormaPermutacijeSPonavljanjem();
@@ -25,7 +26,7 @@ namespace Kombinatorika
             DialogResult rez = frm.ShowDialog();
             this.Close();
         }
-
+        //Pokretanje forme permutacije bez ponavljanja
         private void btnPermutacijeBez_Click(object sender, EventArgs e)
         {
             FormaPermutacijeBezPonavljanja frm = new FormaPermutacijeBezPonavljanja();
@@ -33,7 +34,7 @@ namespace Kombinatorika
             DialogResult rez = frm.ShowDialog();
             this.Close();
         }
-
+        //Pokretanje forme varijacije s ponavljanjem
         private void btnVarijacijeS_Click(object sender, EventArgs e)
         {
             FormaVarijacijeSPonavljanjem frm = new FormaVarijacijeSPonavljanjem();
@@ -41,7 +42,7 @@ namespace Kombinatorika
             DialogResult rez = frm.ShowDialog();
             this.Close();
         }
-
+        //Pokretanje forme varijacije bez ponavljanja
         private void btnVarijacijeBez_Click(object sender, EventArgs e)
         {
             FormaVarijacijeBezPonavljanja frm = new FormaVarijacijeBezPonavljanja();
@@ -49,7 +50,7 @@ namespace Kombinatorika
             DialogResult rez = frm.ShowDialog();
             this.Close();
         }
-
+        //Pokretanje forme konbinacije s ponavljanjem
         private void btnKonbinacijeS_Click(object sender, EventArgs e)
         {
             FormaKombinacijeSPonavljanjem frm = new FormaKombinacijeSPonavljanjem();
@@ -57,7 +58,7 @@ namespace Kombinatorika
             DialogResult rez = frm.ShowDialog();
             this.Close();
         }
-
+        //Pokretanje forme konbinacije bez ponavljanja
         private void btnKonbinacijeBez_Click(object sender, EventArgs e)
         {
             FormaKombinacijeBezPonavljanja frm = new FormaKombinacijeBezPonavljanja();
