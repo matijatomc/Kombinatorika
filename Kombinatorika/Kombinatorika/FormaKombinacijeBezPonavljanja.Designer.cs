@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Kombinatorika.Properties.Resources.Kombinacije_bez_ponavljanja;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(21)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.btnIzracunaj);
